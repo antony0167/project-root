@@ -1,0 +1,6 @@
+[submodule "host-app"]
+	path = host-app
+	url = https://github.com/antony0167/host-app.git
+[submodule "mf-template"]
+	path = mf-template
+	url = https://github.com/antony0167/mf-template.git
