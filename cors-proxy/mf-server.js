@@ -1,12 +1,15 @@
 const express = require('express');
 const cors = require('cors');
+const path = require("path");
 
 const app = express();
 const PORT = 3001;
 
 app.use(cors());
 
-const dir = "C:/Users/dluze/WebstormProjects/vonRoll/project-root/";
+app.use(express.static(path.join(__dirname)));
+
+const dir = path.join(__dirname, '..');
 
 // app.use('/host', createProxyMiddleware({
 //     target: 'http://localhost:4200',
