@@ -36,7 +36,7 @@ app.get('/', function(req, res) {
 
 app.use('/mf', express.static(dir + "/mf-template/dist/mf-template/browser"));
 
-app.get('/mf/{*any}', function(req, res) {
+app.get('/mf', function(req, res) {
     res.sendFile(dir + "/mf-template/dist/mf-template/browser/index.html");
 });
 
